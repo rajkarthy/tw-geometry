@@ -14,5 +14,14 @@ class RectangleTest {
         assertEquals(expectedArea,actualArea);
     }
 
+    @Test
+    void testAreaIsEightIfSidesAreFourAndTwo() {
+        int length = 4;
+        int breadth = 2;
+        int expectedArea = 8;
+        Rectangle rectangle = new Rectangle(length,breadth);
+        int actualArea = rectangle.area();
 
+        assertEquals(expectedArea,actualArea);
+    }
 }
